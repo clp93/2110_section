@@ -9,7 +9,7 @@ public class PythagoreanSolverV2 {
 		calculate();
 	}
 
-	/** Calculates C in A^2 + B^2 = C^2. Asks for input and prints answer. */ 
+	/** Calculates C in A^2 + B^2 = C^2. Asks for input and prints answer. */
 	public static void calculate() {
 		boolean finished = false;
 		while (!finished) {
@@ -30,7 +30,9 @@ public class PythagoreanSolverV2 {
 		System.out.println("Closing application...");
 	}
 
-	/** Parses A and B and returns C. WARNING: May throw NumberFormatException. */
+	/**
+	 * Parses A and B and returns C. WARNING: May throw NumberFormatException.
+	 */
 	private static double parseInputAndAnswer(String input) {
 		String[] numbers = input.split(" ");
 		int total = 0;
@@ -40,8 +42,10 @@ public class PythagoreanSolverV2 {
 		return Math.sqrt(total);
 	}
 
-	/** Converts the input into an int and returns the square. 
-	 *  WARNING: May throw NumberFormatException. */
+	/**
+	 * Converts the input into an int and returns the square. WARNING: May throw
+	 * NumberFormatException.
+	 */
 	private static int convertAndSquare(String number) {
 		int n = Integer.parseInt(number);
 		return n * n;

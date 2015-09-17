@@ -6,3 +6,22 @@
 // -------------------------- Exercise 3 --------------------------
 
 // TODO
+
+class Person {
+	String name;
+	int age;
+	
+	public void setName(String name) {
+		if (name == null) {
+			throw new IllegalArgumentException("Name cannot be null");
+		}
+		this.name = name;
+	}
+	
+	public void setAge(int age) {
+		if (age < 0) {
+			throw new IllegalArgumentException("age must be positive");
+		}
+		this.age = age;
+	}
+}
